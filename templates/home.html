@@ -1,0 +1,60 @@
+<!--<!DOCTYPE html>-->
+<!--<html >-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+<!--  <title>Heart Disease Percent</title>-->
+
+    <!--</head>-->
+
+<!--    <body style="background: #000;">-->
+<!--     <div class = "login">-->
+<!--        <h1 style="color:Violet;">Heart disease prediction</h1>-->
+
+<!--        <form method="post", action="{{url_for('home')}}" >-->
+<!--            <input type="text" name="percent biking" placeholder="Percent population biking" required="required" />-->
+<!--            <input type="text" name="percent smoking" placeholder="Percent population smoking" required="required" />-->
+
+<!--            <button type="submit" class="btn">Predict percent population with heart disease</button>-->
+<!--        </form>-->
+
+<!--       <br>-->
+<!--       <br>-->
+<!--       <h4 style="color:Violet;">-->
+<!--       {{ prediction_text }} </h4>-->
+
+<!--     </div>-->
+
+
+<!--    </body>-->
+<!--</html>-->
+
+
+<html>
+    <body bgcolor= #7dcea0 >
+
+        <center>
+
+        <h1> Loan Risk Prediction </h1><br>
+
+        <form method="POST", action="{{url_for('predict')}}">
+           <b> Annual_inc :  <input type="text", name='a', placeholder="enter 1"> <br><br>
+            Fico_range_high :  <input type="text", name='b', placeholder="enter 2"> <br><br>
+            Fico_range_low :  <input type="text", name='c', placeholder="enter 3"> <br><br>
+            Int_rate :  <input type="text", name='c', placeholder="enter 4"> <br><br>
+            Loan_amnt :  <input type="text", name='c', placeholder="enter 5"> <br><br>
+            Num_actv_bc_tl :  <input type="text", name='c', placeholder="enter 6"> <br><br>
+            Tot_cur_bal :  <input type="text", name='c', placeholder="enter 7"> <br><br>
+            Open_acc :  <input type="text", name='c', placeholder="enter 8"> <br><br>
+            Revol_bal : <input type="text", name='d', placeholder="enter 9"> <br><br><br></b>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict percent population with heart disease</button></p>
+        </form>
+
+       <h4 style="color:Black;">
+       {{ prediction_text }} </h4>
+    </center>
+
+    </body>
+</html>
