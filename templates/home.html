@@ -33,27 +33,26 @@
 
 
 <html>
-    <body bgcolor= #7dcea0 >
+    <body bgcolor= #f2f7f5 >
 
         <center>
 
-        <h1> Loan Risk Prediction </h1><br>
+        <h1 style="font-family: Fantasy"> Loan Risk Prediction </h1><br>
 
         <form method="POST", action="{{url_for('predict')}}">
-           <b> Annual_inc :  <input type="text", name='a', placeholder="enter 1"> <br><br>
-            Fico_range_high :  <input type="text", name='b', placeholder="enter 2"> <br><br>
-            Fico_range_low :  <input type="text", name='c', placeholder="enter 3"> <br><br>
-            Int_rate :  <input type="text", name='d', placeholder="enter 4"> <br><br>
-            Loan_amnt :  <input type="text", name='e', placeholder="enter 5"> <br><br>
-            Num_actv_bc_tl :  <input type="text", name='f', placeholder="enter 6"> <br><br>
-            Tot_cur_bal :  <input type="text", name='g', placeholder="enter 7"> <br><br>
-            Open_acc :  <input type="text", name='h', placeholder="enter 8"> <br><br>
-            Revol_bal : <input type="text", name='i', placeholder="enter 9"> <br><br><br></b>
-            <button type="submit" class="btn btn-primary btn-block btn-large">Predict percent population with heart disease</button></p>
+           <b> Annual_inc :  <input style="background-color: #5ac79b" type="text", name='a', placeholder="enter 1"> <br><br>
+            Fico_range_high :  <input style="background-color: #5ac79b" type="text", name='b', placeholder="enter 2"> <br><br>
+            Fico_range_low :  <input style="background-color: #5ac79b" type="text", name='c', placeholder="enter 3"> <br><br>
+            Int_rate :  <input style="background-color: #5ac79b" type="text", name='d', placeholder="enter 4"> <br><br>
+            Loan_amnt :  <input style="background-color: #5ac79b" type="text", name='e', placeholder="enter 5"> <br><br>
+            Num_actv_bc_tl :  <input style="background-color: #5ac79b" type="text", name='f', placeholder="enter 6"> <br><br>
+            Tot_cur_bal :  <input style="background-color: #5ac79b" type="text", name='g', placeholder="enter 7"> <br><br>
+            Open_acc :  <input style="background-color: #5ac79b" type="text", name='h', placeholder="enter 8"> <br><br>
+            Revol_bal : <input style="background-color: #5ac79b" type="text", name='i', placeholder="enter 9"> <br><br><br></b>
+            <button style="background-color: #1b9ade;height: 40px; width:60px"  type="submit" class="btn btn-primary btn-block btn-large">Predict</button></p>
         </form>
+        {{ prediction_text }} </h4>
 
-       <h4 style="color:Black;">
-       {{ prediction_text }} </h4>
     </center>
 
     </body>
